@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Interno - Dispositivos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Catálogo Interno de Dispositivos VERISURE</h1>
+            <p class="subtitle">Sistema de Alarmas - Herramienta Upselling</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Buscar dispositivo...">
+            </div>
+            <div class="filter-box">
+                <select id="categoryFilter">
+                    <option value="all">Todas las categorías</option>
+                    <option value="controles">Controles y Acceso</option>
+                    <option value="sensores">Sensores y Detectores</option>
+                    <option value="camaras">Cámaras</option>
+                    <option value="otros">Otros Dispositivos</option>
+                    <option value="packs">Packs Especiales</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="catalogContent"></div>
+        <div id="noResults" class="no-results" style="display: none;">
+            No se encontraron dispositivos con ese nombre.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
